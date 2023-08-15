@@ -4,16 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>CDASTRO LIVRO</h1>
+    <div class="borda">
+    <h1>CADASTRO LIVRO</h1>
     <input id="nomelivro" placeholder="nome" type="text"> 
     <input id="autorlivro" placeholder="autor" type="text">
     <input id="anolivro" placeholder="ano" type="number">
     <button onclick="adicionar()">Adicionar livro</button>
     <button onclick="mostrarlivro()">Mostrar</button>
+    <button onclick="apagar()">apagar</button>
+    </div>
+
+    <h1 id="aparecer"></h1>
+    <p id="livri"></p>
 
     <script src="script.js"></script>
 </body>

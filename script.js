@@ -12,7 +12,18 @@ function adicionar() {
     let autor = document.getElementById("autorlivro").value;
     let ano = document.getElementById("anolivro").value;
     cadastro(nome, autor, ano);
+    let resultado = document.getElementById('aparecer')
+    resultado.textContent = "livro registrado";
 }
-function mostrarlivro(){
-    console.log(`resultado:${biblioteca[0].ano}`)
+function mostrarlivro() {
+    for (let livro of biblioteca)
+    console.log(livro);
+   let mostre= [
+    {titulo: "livro 1 ", autor:'autor1', ano:'ano1'}
+   ]
+
+}
+
+function apagar(){
+    biblioteca.length = 0;
 }
